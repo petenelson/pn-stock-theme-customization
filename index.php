@@ -8,7 +8,7 @@ Author: Pete Nelson
 add_action( 'wp_enqueue_scripts', 'pn_stock_theme_customization_css', 999 );
 
 function pn_stock_theme_customization_css() {
-	wp_enqueue_style( 'petenelson-stock-theme-customization', plugin_dir_url( __FILE__ ) . 'style.css', null, '2015-04-23-02' );
+	wp_enqueue_style( 'petenelson-stock-theme-customization', plugin_dir_url( __FILE__ ) . 'style.css', null, '2015-04-23-03' );
 }
 
 
