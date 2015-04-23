@@ -1,0 +1,88 @@
+/* My custom overrides for the Stock theme (https://wordpress.org/themes/stock/) */
+
+#content {
+	padding: 1em;
+}
+
+#masthead {
+	background-color: #384858 !important;
+}
+
+#masthead .menu a {
+	color: #cccccc;
+}
+
+#masthead .menu .current_page_item a {
+	color: #ffffff;
+}
+
+#main article {
+	border: solid 1px #C0C0C0;
+}
+
+#main article .entry-content, #main article .entry-footer {
+	padding: 0.5em;
+}
+
+#main .entry-title {
+
+	background-color: #9AAAAC;
+
+}
+
+#secondary {
+	border-left: none;
+	padding-left: 0;
+}
+
+#secondary aside {
+	background-color: #546479;
+	border: solid 1px #C0C0C0;
+	padding: 0.5em;
+}
+
+#secondary aside .widget-title {
+	color: #ffffff;
+}
+
+#secondary aside a {
+	color: #E5E5E5;
+	text-decoration: underline;
+}
+
+#secondary aside a:hover, #secondary aside a:active {
+	color: #cccccc;
+}
+
+
+.gallery {
+	background: initial;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+.gallery .gallery-item {
+	padding: 0.25em;
+}
+
+@media (min-width: 800px) {
+
+	.gallery .gallery-item {
+		padding: 0.5em;
+	}
+
+}
+
+button {
+	background: #000000;
+	border-radius: 0;
+	text-shadow: none;
+	box-shadow: none;
+}
+
+button:hover {
+	box-shadow: none;
+	background: #222222;
+}
+
