@@ -86,3 +86,13 @@ button:hover {
 	background: #222222;
 }
 
+.single-attachment .entry-content {
+	text-align: center;
+}
+
+
+.single-attachment #primary, .page #primary {
+	margin-right: initial;
+	width: initial;
+}
+
