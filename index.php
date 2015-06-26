@@ -31,6 +31,18 @@ function pn_stock_theme_customization_the_content( $content ) {
 }
 
 
+add_filter( 'wpseo_opengraph_image', 'pn_stock_theme_customization_wpseo_opengraph_image' );
+
+function pn_stock_theme_customization_wpseo_opengraph_image( $img ) {
+	
+	if ( wp_attachment_is_image() ) {
+		$img = wp_get_attachment_url( get_the_id() );
+	}
+	
+	return $img;
+}
+
+
 add_filter( 'is_active_sidebar', 'pn_stock_theme_customization_is_active_sidebar', 10, 2 );
 
 function pn_stock_theme_customization_is_active_sidebar( $is_active, $index ) {
