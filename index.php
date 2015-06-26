@@ -13,6 +13,7 @@ function pn_stock_theme_customization_css() {
 
 
 add_filter( 'the_content', 'pn_stock_theme_customization_the_content' );
+ady_filter( 'wpseo_pre_analysis_post_content', 'pn_stock_theme_customization_the_content' );
 
 function pn_stock_theme_customization_the_content( $content ) {
 
@@ -28,18 +29,6 @@ function pn_stock_theme_customization_the_content( $content ) {
 	}
 
 	return $content;
-}
-
-
-add_filter( 'wpseo_opengraph_image', 'pn_stock_theme_customization_wpseo_opengraph_image' );
-
-function pn_stock_theme_customization_wpseo_opengraph_image( $img ) {
-	
-	if ( wp_attachment_is_image() ) {
-		$img = wp_get_attachment_url( get_the_id() );
-	}
-	
-	return $img;
 }
 
 
