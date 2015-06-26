@@ -13,7 +13,7 @@ function pn_stock_theme_customization_css() {
 
 
 add_filter( 'the_content', 'pn_stock_theme_customization_the_content' );
-ady_filter( 'wpseo_pre_analysis_post_content', 'pn_stock_theme_customization_the_content' );
+add_filter( 'wpseo_pre_analysis_post_content', 'pn_stock_theme_customization_the_content' );
 
 function pn_stock_theme_customization_the_content( $content ) {
 
